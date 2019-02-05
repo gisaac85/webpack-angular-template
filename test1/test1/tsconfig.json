@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es5",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "lib": [ "es6", "dom" ],
+    "types": [ "webpack-env" ],
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "noStrictGenericChecks": true,
+    "baseUrl": ".",
+    "typeRoots": [
+      "./node_modules/@types/"
+      //"./ClientApp/@types/*.d.ts"
+    ]
+  },
+    "exclude": [
+        "bin",
+        "node_modules",
+        "Controllers",
+        "Views",
+        "wwwroot"
+    ],
+    "angularCompilerOptions": {
+        "preserveWhitespaces": false
+    },
+    "awesomeTypescriptLoaderOptions": {
+        "useWebpackText": true
+    },
+    "atom": { "rewriteTsconfig": false }
+}
